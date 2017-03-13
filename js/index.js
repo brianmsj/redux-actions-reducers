@@ -7,8 +7,9 @@ import * as actions from './actions/index';
 const store = createStore(gameReducer);
 
 store.dispatch(actions.newGame());
-
 store.dispatch(actions.playerGuess(50));
+store.dispatch(actions.what());
+store.dispatch(actions.gotIt());
 
 console.log(store.getState());
 
