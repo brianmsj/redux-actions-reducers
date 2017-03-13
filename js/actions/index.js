@@ -17,9 +17,9 @@
 
 
 export const NEW_GAME = 'NEW_GAME';
-export const newGame = randomNumber => ({
+export const newGame = () => ({
     type: NEW_GAME,
-    randomNumber
+    randomNumber: Math.floor(Math.random() * 100) + 1
 });
 
 export const PLAYER_GUESS = 'PLAYER_GUESS';
